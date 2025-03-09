@@ -2,6 +2,7 @@ package com.mycompany.jobspringboot.controller;
 
 import com.mycompany.jobspringboot.domain.JobCategory;
 import com.mycompany.jobspringboot.service.JobCategoryService;
+import com.mycompany.jobspringboot.utils.ResponseResult;
 import jakarta.annotation.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,7 +18,7 @@ public class JobCategoryController {
     private JobCategoryService jobCategoryService;
 
     @GetMapping("/all/category")
-    public List<JobCategory> getAllCategory(){
+    public ResponseResult getAllCategory(){
         return jobCategoryService.getAllJobCategory();
     }
 
