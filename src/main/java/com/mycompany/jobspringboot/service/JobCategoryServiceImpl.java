@@ -2,6 +2,7 @@ package com.mycompany.jobspringboot.service;
 
 import com.mycompany.jobspringboot.domain.JobCategory;
 import com.mycompany.jobspringboot.mapper.JobCategoryMapper;
+import com.mycompany.jobspringboot.utils.ResponseResult;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -14,8 +15,8 @@ public class JobCategoryServiceImpl implements JobCategoryService {
     private JobCategoryMapper jobCategoryMapper;
 
     @Override
-    public List<JobCategory> getAllJobCategory() {
-        return jobCategoryMapper.allJobCategory();
+    public ResponseResult getAllJobCategory() {
+        return new ResponseResult(jobCategoryMapper.allJobCategory());
     }
 
     /**

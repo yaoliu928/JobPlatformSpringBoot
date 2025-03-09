@@ -1,6 +1,7 @@
 package com.mycompany.jobspringboot.service;
 
 import com.mycompany.jobspringboot.domain.JobCategory;
+import com.mycompany.jobspringboot.utils.ResponseResult;
 
 import java.util.List;
 
@@ -9,7 +10,7 @@ public interface JobCategoryService {
      * get all job categories
      * @return
      */
-    List<JobCategory> getAllJobCategory();
+    ResponseResult getAllJobCategory();
 
     /**
      * create new job category
