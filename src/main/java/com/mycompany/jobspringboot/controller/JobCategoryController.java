@@ -4,6 +4,7 @@ import com.mycompany.jobspringboot.domain.JobCategory;
 import com.mycompany.jobspringboot.service.JobCategoryService;
 import com.mycompany.jobspringboot.utils.ResponseResult;
 import jakarta.annotation.Resource;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,7 +24,7 @@ public class JobCategoryController {
     }
 
     @PostMapping("/add/category")
-    public int addCategory(JobCategory jobCategory){
+    public ResponseResult addCategory(@Validated JobCategory jobCategory){
         return jobCategoryService.addJobCategory(jobCategory);
     }
 
