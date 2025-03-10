@@ -17,7 +17,7 @@ public interface JobCategoryService {
      * @param jobCategory
      * @return
      */
-    int addJobCategory(JobCategory jobCategory);
+    ResponseResult addJobCategory(JobCategory jobCategory);
 
     /**
      * delete job category

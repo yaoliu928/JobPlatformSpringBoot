@@ -3,10 +3,13 @@ package com.mycompany.jobspringboot.service;
 import com.mycompany.jobspringboot.domain.JobCategory;
 import com.mycompany.jobspringboot.mapper.JobCategoryMapper;
 import com.mycompany.jobspringboot.utils.ResponseResult;
+import com.mycompany.jobspringboot.utils.enums.ResultCodeEnum;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class JobCategoryServiceImpl implements JobCategoryService {
@@ -25,13 +28,14 @@ public class JobCategoryServiceImpl implements JobCategoryService {
      * @return
      */
     @Override
-    public int addJobCategory(JobCategory jobCategory) {
+    public ResponseResult addJobCategory(JobCategory jobCategory) {
         int result = jobCategoryMapper.insertJobCategory(jobCategory);
+        Map<String, Integer> idMap = new HashMap<>();
         if (result >0) {
-            // if insert successfully, return primary key
-            result = jobCategory.getId();
+            idMap.put("id", jobCategory.getId());
+            return new ResponseResult(idMap);
         }
-        return result;
+        return new ResponseResult(ResultCodeEnum.SERVER_ERROR);
     }
 
     /**
