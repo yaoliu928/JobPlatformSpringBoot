@@ -9,6 +9,7 @@ public enum ResultCodeEnum {
     NOT__FOUND(404, "not found"),
     SERVER_ERROR(500, "server error"),
     DB_ERROR(505, "database error"),
+    UNIQUE_KEY_ERROR(506, "unique key error"),
     UNKNOWN_ERROR(600, "unknown error");
 
     // status code
