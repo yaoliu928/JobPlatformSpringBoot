@@ -24,13 +24,13 @@ public interface JobCategoryService {
      * @param id
      * @return
      */
-    int removeJobCategory(Integer id);
+    ResponseResult removeJobCategory(Integer id);
 
     /**
      * update job category
      * @param jobCategory
      * @return
      */
-    int updateJobCategory(JobCategory jobCategory);
+    ResponseResult updateJobCategory(JobCategory jobCategory);
 
 }
