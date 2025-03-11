@@ -2,6 +2,7 @@ package com.mycompany.jobspringboot.utils.exception;
 
 import com.mycompany.jobspringboot.utils.ResponseResult;
 import com.mycompany.jobspringboot.utils.enums.ResultCodeEnum;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -33,5 +34,25 @@ public class GlobalExceptionHandle {
 
         String message = strBuilder.toString();
         return new ResponseResult(ResultCodeEnum.PARAM_ERROR.getCode(), message);
+    }
+
+    /**
+     * duplicate key exception handler
+     * @param e
+     * @return
+     */
+    @ExceptionHandler(DuplicateKeyException.class)
+    public ResponseResult duplicateKeyExceptionHandler(DuplicateKeyException e) {
+        return new ResponseResult(ResultCodeEnum.UNIQUE_KEY_ERROR.getCode(),e.getCause().getMessage());
+    }
+
+    /**
+     * unknown exception handler
+     * @param e
+     * @return
+     */
+    @ExceptionHandler(Exception.class)
+    public ResponseResult unknownExceptionHandler(Exception e) {
+        return new ResponseResult(ResultCodeEnum.UNKNOWN_ERROR.getCode(), e.getMessage());
     }
 }
