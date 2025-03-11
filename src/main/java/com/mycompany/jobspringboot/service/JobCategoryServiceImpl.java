@@ -44,8 +44,12 @@ public class JobCategoryServiceImpl implements JobCategoryService {
      * @return
      */
     @Override
-    public int removeJobCategory(Integer id) {
-        return jobCategoryMapper.deleteByPrimaryKey(id);
+    public ResponseResult removeJobCategory(Integer id) {
+        int result = jobCategoryMapper.deleteByPrimaryKey(id);
+        if (result > 0) {
+            return new ResponseResult();
+        }
+        return new ResponseResult(ResultCodeEnum.DB_ERROR);
     }
 
     /**
@@ -54,7 +58,11 @@ public class JobCategoryServiceImpl implements JobCategoryService {
      * @return
      */
     @Override
-    public int updateJobCategory(JobCategory jobCategory) {
-        return jobCategoryMapper.updateByPrimaryKey(jobCategory);
+    public ResponseResult updateJobCategory(JobCategory jobCategory) {
+        int result = jobCategoryMapper.updateByPrimaryKey(jobCategory);
+        if (result > 0) {
+            return new ResponseResult();
+        }
+        return new ResponseResult(ResultCodeEnum.DB_ERROR);
     }
 }

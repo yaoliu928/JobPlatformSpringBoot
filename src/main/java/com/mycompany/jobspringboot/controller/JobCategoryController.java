@@ -29,12 +29,12 @@ public class JobCategoryController {
     }
 
     @PostMapping("/delete/category")
-    public int deleteCategory(@RequestParam(value = "id") Integer id){
+    public ResponseResult deleteCategory(@RequestParam(value = "id") Integer id){
         return jobCategoryService.removeJobCategory(id);
     }
 
     @PostMapping("/update/category")
-    public int updateCategory(JobCategory jobCategory){
+    public ResponseResult updateCategory(JobCategory jobCategory){
         return jobCategoryService.updateJobCategory(jobCategory);
     }
 }
