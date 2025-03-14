@@ -1,14 +1,14 @@
-package com.mycompany.jobspringboot.service;
+package com.mycompany.jobspringboot.service.impl;
 
 import com.mycompany.jobspringboot.domain.JobCategory;
 import com.mycompany.jobspringboot.mapper.JobCategoryMapper;
+import com.mycompany.jobspringboot.service.JobCategoryService;
 import com.mycompany.jobspringboot.utils.ResponseResult;
 import com.mycompany.jobspringboot.utils.enums.ResultCodeEnum;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 @Service
