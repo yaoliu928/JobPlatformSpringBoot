@@ -1,77 +1,44 @@
-2025-03-11 21:50:47 [http-nio-8080-exec-1] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 40 - 400validation failed: category_name: Category name cannot be empty,category_name: Category name length must be between 2 and 20,
-2025-03-11 21:50:48 [http-nio-8080-exec-3] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 40 - 400validation failed: category_name: Category name cannot be empty,category_name: Category name length must be between 2 and 20,
-2025-03-11 21:50:49 [http-nio-8080-exec-4] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 40 - 400validation failed: category_name: Category name cannot be empty,category_name: Category name length must be between 2 and 20,
-2025-03-11 21:50:49 [http-nio-8080-exec-5] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 40 - 400validation failed: category_name: Category name cannot be empty,category_name: Category name length must be between 2 and 20,
-2025-03-11 21:50:51 [http-nio-8080-exec-6] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 40 - 400validation failed: category_name: Category name cannot be empty,category_name: Category name length must be between 2 and 20,
-2025-03-11 21:52:09 [http-nio-8080-exec-10] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 51 - 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'test' for key 'job_category.category_name_unique'
-### The error may exist in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/mapper/JobCategoryMapper.xml]
-### The error may involve com.mycompany.jobspringboot.mapper.JobCategoryMapper.insertJobCategory-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO `job_category`             (category_name, category_desc)         VALUES             (?,?)
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'test' for key 'job_category.category_name_unique'
-; Duplicate entry 'test' for key 'job_category.category_name_unique'
-2025-03-11 21:52:11 [http-nio-8080-exec-2] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 51 - 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'test' for key 'job_category.category_name_unique'
-### The error may exist in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/mapper/JobCategoryMapper.xml]
-### The error may involve com.mycompany.jobspringboot.mapper.JobCategoryMapper.insertJobCategory-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO `job_category`             (category_name, category_desc)         VALUES             (?,?)
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'test' for key 'job_category.category_name_unique'
-; Duplicate entry 'test' for key 'job_category.category_name_unique'
-2025-03-11 21:52:39 [http-nio-8080-exec-3] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 51 - 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'QA' for key 'job_category.category_name_unique'
-### The error may exist in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/mapper/JobCategoryMapper.xml]
-### The error may involve com.mycompany.jobspringboot.mapper.JobCategoryMapper.insertJobCategory-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO `job_category`             (category_name, category_desc)         VALUES             (?,?)
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'QA' for key 'job_category.category_name_unique'
-; Duplicate entry 'QA' for key 'job_category.category_name_unique'
-2025-03-11 21:56:23 [http-nio-8080-exec-3] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 53 - 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'PO' for key 'job_category.category_name_unique'
-### The error may exist in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/mapper/JobCategoryMapper.xml]
-### The error may involve com.mycompany.jobspringboot.mapper.JobCategoryMapper.insertJobCategory-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO `job_category`             (category_name, category_desc)         VALUES             (?,?)
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'PO' for key 'job_category.category_name_unique'
-; Duplicate entry 'PO' for key 'job_category.category_name_unique'
-2025-03-11 22:01:55 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter: 40 - 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'com.mycompany.jobspringboot.service.JobCategoryService' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'com.mycompany.jobspringboot.service.JobCategoryService' in your configuration.
-
-2025-03-11 22:08:50 [http-nio-8080-exec-4] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 64 - Required request parameter 'id' for method parameter type Integer is present but converted to null
-2025-03-11 22:09:46 [http-nio-8080-exec-8] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 53 - 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'job_category.category_name_unique'
-### The error may exist in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/mapper/JobCategoryMapper.xml]
-### The error may involve com.mycompany.jobspringboot.mapper.JobCategoryMapper.updateByPrimaryKey-Inline
-### The error occurred while setting parameters
-### SQL: UPDATE `job_category`         SET             category_name=?,             category_desc=?         WHERE             id = ?
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'job_category.category_name_unique'
-; Duplicate entry '' for key 'job_category.category_name_unique'
-2025-03-11 22:10:08 [http-nio-8080-exec-9] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 53 - 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'job_category.category_name_unique'
-### The error may exist in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/mapper/JobCategoryMapper.xml]
-### The error may involve com.mycompany.jobspringboot.mapper.JobCategoryMapper.updateByPrimaryKey-Inline
-### The error occurred while setting parameters
-### SQL: UPDATE `job_category`         SET             category_name=?,             category_desc=?         WHERE             id = ?
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'job_category.category_name_unique'
-; Duplicate entry '' for key 'job_category.category_name_unique'
-2025-03-11 22:10:15 [http-nio-8080-exec-10] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 53 - 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'job_category.category_name_unique'
-### The error may exist in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/mapper/JobCategoryMapper.xml]
-### The error may involve com.mycompany.jobspringboot.mapper.JobCategoryMapper.updateByPrimaryKey-Inline
-### The error occurred while setting parameters
-### SQL: UPDATE `job_category`         SET             category_name=?,             category_desc=?         WHERE             id = ?
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '' for key 'job_category.category_name_unique'
-; Duplicate entry '' for key 'job_category.category_name_unique'
+2025-03-18 20:30:36 [restartedMain] ERROR org.springframework.boot.SpringApplication: 857 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'jobCategoryMapper' defined in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/com/mycompany/jobspringboot/mapper/JobCategoryMapper.class]: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:858)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getType(AbstractBeanFactory.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAnnotationOnBean(DefaultListableBeanFactory.java:791)
+	at org.springframework.boot.sql.init.dependency.AnnotationDependsOnDatabaseInitializationDetector.detect(AnnotationDependsOnDatabaseInitializationDetector.java:36)
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.detectDependsOnInitializationBeanNames(DatabaseInitializationDependencyConfigurer.java:152)
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.postProcessBeanFactory(DatabaseInitializationDependencyConfigurer.java:115)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:363)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.mycompany.jobspringboot.JobSpringBootApplication.main(JobSpringBootApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+2025-03-18 20:41:21 [restartedMain] ERROR org.springframework.boot.SpringApplication: 857 - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'jobCategoryMapper' defined in file [/Users/al/IdeaProjects/job-spring-boot/target/classes/com/mycompany/jobspringboot/mapper/JobCategoryMapper.class]: Invalid value type for attribute 'factoryBeanObjectType': java.lang.String
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:858)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getType(AbstractBeanFactory.java:745)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAnnotationOnBean(DefaultListableBeanFactory.java:791)
+	at org.springframework.boot.sql.init.dependency.AnnotationDependsOnDatabaseInitializationDetector.detect(AnnotationDependsOnDatabaseInitializationDetector.java:36)
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.detectDependsOnInitializationBeanNames(DatabaseInitializationDependencyConfigurer.java:152)
+	at org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor.postProcessBeanFactory(DatabaseInitializationDependencyConfigurer.java:115)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:363)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:791)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:609)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.mycompany.jobspringboot.JobSpringBootApplication.main(JobSpringBootApplication.java:12)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
