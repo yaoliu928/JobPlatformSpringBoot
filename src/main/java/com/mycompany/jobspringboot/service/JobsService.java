@@ -1,5 +1,6 @@
 package com.mycompany.jobspringboot.service;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.mycompany.jobspringboot.domain.Jobs;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -10,4 +11,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface JobsService extends IService<Jobs> {
 
+    /**
+     * page query
+     * @param pageNum
+     * @param pageSize
+     * @return
+     */
+    IPage<Jobs> getJobsByPage(int pageNum, int pageSize);
 }
