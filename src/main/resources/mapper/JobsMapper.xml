@@ -22,4 +22,17 @@
         id,job_title,category_name,salary,city,job_desc,
         company,company_info,author,author_photo,publish_time
     </sql>
+
+    <select id="countByCategoryName" resultType="com.mycompany.jobspringboot.vo.JobsByCategoryVo">
+        SELECT
+            js.category_name, jc.category_desc, COUNT(js.id) AS quantity
+        FROM
+            jobs js
+                LEFT JOIN
+            job_category jc ON js.category_name = jc.category_name
+        GROUP BY
+            js.category_name
+        ORDER BY
+            quantity DESC;
+    </select>
 </mapper>

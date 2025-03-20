@@ -2,6 +2,9 @@ package com.mycompany.jobspringboot.mapper;
 
 import com.mycompany.jobspringboot.domain.Jobs;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.mycompany.jobspringboot.vo.JobsByCategoryVo;
+
+import java.util.List;
 
 /**
 * @author al
@@ -10,6 +13,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 * @Entity com.mycompany.jobspringboot.domain.Jobs
 */
 public interface JobsMapper extends BaseMapper<Jobs> {
+
+    List<JobsByCategoryVo> countByCategoryName();
 
 }
 
