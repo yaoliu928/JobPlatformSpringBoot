@@ -13,6 +13,6 @@ public class JobCategory {
     private int id;
     @NotBlank(message = "Category name cannot be empty")
     @Length(min = 2, max = 20, message = "Category name length must be between 2 and 20")
-    private String category_name;
-    private String category_desc;
+    private String categoryName;
+    private String categoryDesc;
 }
