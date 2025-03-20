@@ -7,9 +7,13 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.mycompany.jobspringboot.domain.Jobs;
 import com.mycompany.jobspringboot.service.JobsService;
 import com.mycompany.jobspringboot.mapper.JobsMapper;
+import com.mycompany.jobspringboot.vo.JobsByCategoryVo;
 import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.batch.BatchProperties;
 import org.springframework.stereotype.Service;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
 * @author al
@@ -44,6 +48,11 @@ public class JobsServiceImpl extends ServiceImpl<JobsMapper, Jobs>
         // execute query
         Page<Jobs> jobsPage = jobsMapper.selectPage(page, queryWrapper);
         return jobsPage;
+    }
+
+    public List<JobsByCategoryVo> countByCategoryName(){
+        List<JobsByCategoryVo> jobsByCategoryVos = jobsMapper.countByCategoryName();
+        return jobsByCategoryVos;
     }
 
 }

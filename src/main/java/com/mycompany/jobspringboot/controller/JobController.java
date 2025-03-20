@@ -5,12 +5,15 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.mycompany.jobspringboot.domain.Jobs;
 import com.mycompany.jobspringboot.service.JobsService;
 import com.mycompany.jobspringboot.utils.ResponseResult;
+import com.mycompany.jobspringboot.vo.JobsByCategoryVo;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/job")
@@ -48,5 +51,15 @@ public class JobController {
         log.info("current page: {}", jobsByPage.getCurrent());
 
         return new ResponseResult(jobsByPage);
+    }
+
+    /**
+     * count jobs by category
+     * @return
+     */
+    @GetMapping("/v1/category/statistics")
+    public ResponseResult getByCategory(){
+        List<JobsByCategoryVo> jobsByCategoryVos = jobsService.countByCategoryName();
+        return new ResponseResult(jobsByCategoryVos);
     }
 }
