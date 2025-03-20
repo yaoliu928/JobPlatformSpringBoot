@@ -35,4 +35,16 @@
         ORDER BY
             quantity DESC;
     </select>
+
+    <select id="countByCity" resultType="com.mycompany.jobspringboot.vo.JobsByCityVo">
+        SELECT
+            city, COUNT(id) AS quantity
+        FROM
+            jobs
+        GROUP BY
+            city
+        ORDER BY
+            quantity DESC;
+    </select>
+
 </mapper>

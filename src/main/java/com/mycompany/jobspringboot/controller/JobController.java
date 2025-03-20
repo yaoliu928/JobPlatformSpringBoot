@@ -6,6 +6,7 @@ import com.mycompany.jobspringboot.domain.Jobs;
 import com.mycompany.jobspringboot.service.JobsService;
 import com.mycompany.jobspringboot.utils.ResponseResult;
 import com.mycompany.jobspringboot.vo.JobsByCategoryVo;
+import com.mycompany.jobspringboot.vo.JobsByCityVo;
 import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -61,5 +62,15 @@ public class JobController {
     public ResponseResult getByCategory(){
         List<JobsByCategoryVo> jobsByCategoryVos = jobsService.countByCategoryName();
         return new ResponseResult(jobsByCategoryVos);
+    }
+
+    /**
+     * count jobs by city
+     * @return
+     */
+    @GetMapping("/v1/city/statistics")
+    public ResponseResult getByCity(){
+        List<JobsByCityVo> jobsByCityVos = jobsService.countByCity();
+        return new ResponseResult(jobsByCityVos);
     }
 }
