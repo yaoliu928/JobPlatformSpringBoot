@@ -8,6 +8,7 @@ import com.mycompany.jobspringboot.domain.Jobs;
 import com.mycompany.jobspringboot.service.JobsService;
 import com.mycompany.jobspringboot.mapper.JobsMapper;
 import com.mycompany.jobspringboot.vo.JobsByCategoryVo;
+import com.mycompany.jobspringboot.vo.JobsByCityVo;
 import jakarta.annotation.Resource;
 import org.springframework.boot.autoconfigure.batch.BatchProperties;
 import org.springframework.stereotype.Service;
@@ -53,6 +54,11 @@ public class JobsServiceImpl extends ServiceImpl<JobsMapper, Jobs>
     public List<JobsByCategoryVo> countByCategoryName(){
         List<JobsByCategoryVo> jobsByCategoryVos = jobsMapper.countByCategoryName();
         return jobsByCategoryVos;
+    }
+
+    public List<JobsByCityVo> countByCity(){
+        List<JobsByCityVo> jobsByCityVos = jobsMapper.countByCity();
+        return jobsByCityVos;
     }
 
 }

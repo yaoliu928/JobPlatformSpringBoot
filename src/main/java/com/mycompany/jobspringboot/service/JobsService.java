@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.mycompany.jobspringboot.domain.Jobs;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.mycompany.jobspringboot.vo.JobsByCategoryVo;
+import com.mycompany.jobspringboot.vo.JobsByCityVo;
 
 import java.util.List;
 
@@ -23,4 +24,6 @@ public interface JobsService extends IService<Jobs> {
     IPage<Jobs> getJobsByPage(int pageNum, int pageSize);
 
     List<JobsByCategoryVo> countByCategoryName();
+
+    List<JobsByCityVo> countByCity();
 }
