@@ -1,0 +1,24 @@
+2025-03-19 22:16:36 [http-nio-8080-exec-1] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 64 - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'publish_name' in 'field list'
+### The error may exist in com/mycompany/jobspringboot/mapper/JobsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   id,job_title,category_name,salary,city,company,publish_name,publish_time   FROM jobs           ORDER BY publish_time DESC LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'publish_name' in 'field list'
+; bad SQL grammar []
+2025-03-19 22:17:38 [http-nio-8080-exec-2] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 64 - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'publish_name' in 'field list'
+### The error may exist in com/mycompany/jobspringboot/mapper/JobsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   id,job_title,category_name,salary,city,company,publish_name,publish_time   FROM jobs           ORDER BY publish_time DESC LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'publish_name' in 'field list'
+; bad SQL grammar []
+2025-03-19 22:17:41 [http-nio-8080-exec-3] ERROR c.m.j.utils.exception.GlobalExceptionHandle: 64 - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'publish_name' in 'field list'
+### The error may exist in com/mycompany/jobspringboot/mapper/JobsMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT   id,job_title,category_name,salary,city,company,publish_name,publish_time   FROM jobs           ORDER BY publish_time DESC LIMIT ?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'publish_name' in 'field list'
+; bad SQL grammar []
