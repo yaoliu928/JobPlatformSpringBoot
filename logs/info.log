@@ -1,101 +1,378 @@
-2025-03-20 19:20:15 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2025-03-20 19:20:15 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 87238 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
-2025-03-20 19:20:15 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
-2025-03-20 19:20:15 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-20 19:20:15 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-20 19:20:15 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-03-20 19:20:15 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-20 19:20:15 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-03-20 19:20:15 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-20 19:20:15 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-03-20 19:20:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 534 ms
-2025-03-20 19:20:21 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-03-20 19:20:21 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-03-20 19:20:21 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-03-20 19:20:21 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.394 seconds (process running for 6.719)
-2025-03-20 19:20:55 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-20 19:20:55 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-03-20 19:20:55 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-03-20 19:20:55 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-03-20 19:20:55 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46adabf9
-2025-03-20 19:20:55 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-03-20 19:21:58 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-20 19:21:58 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-03-20 19:21:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-03-20 19:21:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-03-20 20:59:11 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2025-03-20 20:59:11 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 29621 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
-2025-03-20 20:59:11 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
-2025-03-20 20:59:11 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-20 20:59:11 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-20 20:59:11 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-03-20 20:59:11 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-20 20:59:11 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-03-20 20:59:11 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-20 20:59:11 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-03-20 20:59:11 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 500 ms
-2025-03-20 20:59:17 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-03-20 20:59:17 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-03-20 20:59:17 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-03-20 20:59:17 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.216 seconds (process running for 6.444)
-2025-03-20 20:59:21 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-20 20:59:21 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-03-20 20:59:21 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-03-20 20:59:21 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-03-20 20:59:21 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@17f95a4e
-2025-03-20 20:59:21 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-03-20 20:59:52 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-20 20:59:52 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-03-20 20:59:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-03-20 20:59:52 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-03-20 21:02:50 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
-2025-03-20 21:02:50 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 40046 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
-2025-03-20 21:02:50 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
-2025-03-20 21:02:50 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-03-20 21:02:50 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-03-20 21:02:51 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-03-20 21:02:51 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-20 21:02:51 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-03-20 21:02:51 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-20 21:02:51 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-03-20 21:02:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 485 ms
-2025-03-20 21:02:56 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-03-20 21:02:56 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-03-20 21:02:56 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-03-20 21:02:56 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.194 seconds (process running for 6.395)
-2025-03-20 21:02:59 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-20 21:02:59 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-03-20 21:02:59 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-03-20 21:02:59 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-03-20 21:02:59 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eee451d
-2025-03-20 21:02:59 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-03-20 21:03:28 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2025-03-20 21:03:28 [Thread-5] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-20 21:03:28 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
-2025-03-20 21:03:28 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-03-20 21:03:28 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
-2025-03-20 21:03:28 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-03-20 21:03:28 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-03-20 21:03:28 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 40046 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
-2025-03-20 21:03:28 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
-2025-03-20 21:03:28 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-03-20 21:03:28 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2025-03-20 21:03:28 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2025-03-20 21:03:28 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-03-20 21:03:28 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-03-20 21:03:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 102 ms
-2025-03-20 21:03:28 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-03-20 21:03:28 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2025-03-20 21:03:28 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-03-20 21:03:28 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 0.239 seconds (process running for 38.373)
-2025-03-20 21:03:28 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
-2025-03-20 21:03:38 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-03-20 21:03:38 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-03-20 21:03:38 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2025-03-20 21:03:38 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
-2025-03-20 21:03:38 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c264dd4
-2025-03-20 21:03:38 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
-2025-03-20 21:06:49 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-03-20 21:06:49 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-03-20 21:06:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
-2025-03-20 21:06:49 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2025-03-21 20:26:15 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:26:15 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 38842 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:26:15 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:26:15 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:26:15 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:26:15 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:27:48 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:27:48 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 40687 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:27:48 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:27:48 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:27:48 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:27:49 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:29:32 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:29:32 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 42824 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:29:32 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:29:32 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:29:32 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:29:33 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:29:33 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:29:33 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:29:33 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:29:33 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:29:33 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 507 ms
+2025-03-21 20:29:38 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:29:38 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:29:38 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:29:38 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.22 seconds (process running for 6.419)
+2025-03-21 20:29:59 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-21 20:29:59 [Thread-5] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:29:59 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:29:59 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:29:59 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:29:59 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 42824 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:29:59 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:29:59 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:30:19 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:30:19 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 43709 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:30:19 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:30:19 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:30:19 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:30:19 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:30:30 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:30:30 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 43938 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:30:30 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:30:30 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:30:30 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:30:30 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:30:30 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:30:30 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:30:30 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:30:30 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:30:30 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 516 ms
+2025-03-21 20:30:36 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:30:36 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:30:36 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:30:36 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.253 seconds (process running for 6.463)
+2025-03-21 20:30:52 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-21 20:30:52 [Thread-5] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:30:52 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:30:52 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:30:52 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:30:52 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 43938 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:30:52 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:30:52 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:32:55 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:32:55 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 46804 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:32:55 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:32:55 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:32:55 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:32:55 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:32:55 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:32:55 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:32:55 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:32:55 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:32:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 511 ms
+2025-03-21 20:33:01 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:33:01 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:33:01 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:33:01 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.213 seconds (process running for 6.424)
+2025-03-21 20:33:16 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 20:33:16 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 20:33:16 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-21 20:33:58 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-21 20:33:58 [Thread-5] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:33:58 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:33:58 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:33:58 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:33:58 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 46804 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:33:58 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:33:58 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:34:24 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:34:24 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 48612 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:34:24 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:34:24 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:34:24 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:34:24 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:34:42 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:34:42 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 48999 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:34:42 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:34:42 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:34:42 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:34:42 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 20:47:05 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:47:05 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 63787 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:47:05 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:47:05 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:47:05 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:47:05 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:47:05 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:47:05 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:47:05 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:47:05 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:47:05 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 522 ms
+2025-03-21 20:47:11 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:47:11 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:47:11 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:47:11 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.285 seconds (process running for 6.495)
+2025-03-21 20:47:40 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 20:47:40 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 20:47:40 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-21 20:49:50 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:49:50 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:49:53 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:49:53 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 67128 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:49:53 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:49:53 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:49:53 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:49:53 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:49:53 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:49:53 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:49:53 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:49:54 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:49:54 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 643 ms
+2025-03-21 20:49:59 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:49:59 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:49:59 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:49:59 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.505 seconds (process running for 6.703)
+2025-03-21 20:50:00 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 20:50:00 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 20:50:00 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-21 20:51:37 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-21 20:51:37 [Thread-5] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:51:37 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:51:37 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:51:37 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:51:37 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 67128 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:51:37 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:51:37 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:51:37 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:51:37 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:51:37 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:51:37 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:51:37 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 119 ms
+2025-03-21 20:51:38 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:51:38 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:51:38 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:51:38 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 0.252 seconds (process running for 105.277)
+2025-03-21 20:51:38 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-03-21 20:52:47 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:52:47 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:52:52 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:52:52 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 70659 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:52:52 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:52:52 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:52:52 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:52:52 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:52:52 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:52:52 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:52:52 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:52:52 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:52:52 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 537 ms
+2025-03-21 20:52:58 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:52:58 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:52:58 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:52:58 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.302 seconds (process running for 6.534)
+2025-03-21 20:53:05 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 20:53:05 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 20:53:05 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-03-21 20:53:25 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:53:25 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:53:31 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:53:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 71491 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:53:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:53:31 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:53:31 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:53:31 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:53:31 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:53:31 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:53:31 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:53:31 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:53:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
+2025-03-21 20:53:37 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:53:37 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:53:37 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:53:37 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.332 seconds (process running for 6.526)
+2025-03-21 20:54:06 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 20:54:06 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 20:54:06 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-21 20:57:48 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 20:57:48 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 20:57:51 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.2.Final
+2025-03-21 20:57:51 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 76717 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 20:57:51 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 20:57:51 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 20:57:51 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 20:57:51 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 20:57:51 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:57:51 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 20:57:51 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 20:57:51 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 20:57:51 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 532 ms
+2025-03-21 20:57:57 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 20:57:57 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 20:57:57 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 20:57:57 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.301 seconds (process running for 6.499)
+2025-03-21 20:58:02 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 20:58:02 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 20:58:02 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-21 21:00:15 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 19 class path changes (0 additions, 19 deletions, 0 modifications)
+2025-03-21 21:00:15 [Thread-5] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 21:00:15 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:00:15 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 21:00:15 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:00:15 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 76717 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:00:15 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:00:15 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:00:15 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:00:15 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:00:15 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 21:00:15 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:00:15 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 283 ms
+2025-03-21 21:00:15 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-21 21:00:15 [restartedMain] INFO  o.s.b.a.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-21 21:00:17 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 76717 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:00:17 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:00:17 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:00:17 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:00:17 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:00:17 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 21:00:17 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:00:17 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 72 ms
+2025-03-21 21:00:17 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 21:00:17 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:00:17 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 21:00:17 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 0.17 seconds (process running for 146.616)
+2025-03-21 21:00:17 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-03-21 21:01:21 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 24 class path changes (0 additions, 24 deletions, 0 modifications)
+2025-03-21 21:01:21 [Thread-7] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 21:01:21 [tomcat-shutdown] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:01:21 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 21:01:21 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:01:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 76717 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:01:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:01:31 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:01:31 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:01:31 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-21 21:01:31 [restartedMain] INFO  o.a.c.c.ContainerBase.[Tomcat-2].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:01:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 89 ms
+2025-03-21 21:01:31 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 21:01:31 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-03-21 21:01:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 0.188 seconds (process running for 220.54)
+2025-03-21 21:01:31 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-03-21 21:01:33 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-21 21:01:33 [main] INFO  c.m.jobspringboot.JobSpringBootApplicationTests - Starting JobSpringBootApplicationTests using Java 21.0.4 with PID 81122 (started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:01:33 [main] INFO  c.m.jobspringboot.JobSpringBootApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:01:38 [main] INFO  c.m.jobspringboot.JobSpringBootApplicationTests - Started JobSpringBootApplicationTests in 6.098 seconds (process running for 6.471)
+2025-03-21 21:02:50 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-21 21:02:50 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-03-21 21:03:02 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-21 21:03:02 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 83128 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:03:02 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:03:02 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 21:03:02 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 21:03:03 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:03:03 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:03:03 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:03:03 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-21 21:03:03 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:03:03 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 527 ms
+2025-03-21 21:03:08 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 21:03:08 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:03:08 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-21 21:03:08 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.242 seconds (process running for 6.451)
+2025-03-21 21:03:19 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 21:03:19 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 21:03:19 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-21 21:03:19 [http-nio-8080-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 122 ms
+2025-03-21 21:06:50 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-03-21 21:06:50 [Thread-5] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:06:50 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 83128 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:06:50 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:06:50 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:06:50 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:06:50 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:06:50 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-21 21:06:50 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:06:50 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 99 ms
+2025-03-21 21:06:50 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 21:06:50 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:06:50 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-21 21:06:50 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 0.227 seconds (process running for 228.113)
+2025-03-21 21:06:50 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-03-21 21:07:31 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-03-21 21:07:31 [Thread-7] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:07:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 83128 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:07:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:07:31 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:07:31 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:07:31 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:07:31 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-21 21:07:31 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:07:31 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 84 ms
+2025-03-21 21:07:31 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 21:07:31 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:07:31 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-21 21:07:31 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 0.21 seconds (process running for 269.151)
+2025-03-21 21:07:31 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-03-21 21:12:19 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 21:12:19 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 21:12:19 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-21 21:12:19 [http-nio-8080-exec-7] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 41 ms
+2025-03-21 21:12:22 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-03-21 21:12:22 [Thread-11] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:12:22 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 83128 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:12:22 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:12:22 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:12:22 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:12:22 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:12:22 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-21 21:12:22 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:12:22 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 78 ms
+2025-03-21 21:12:22 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 21:12:22 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:12:22 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-21 21:12:22 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 0.178 seconds (process running for 560.431)
+2025-03-21 21:12:22 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-03-21 21:12:39 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-03-21 21:12:39 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Starting JobSpringBootApplication using Java 21.0.4 with PID 94885 (/Users/al/IdeaProjects/job-spring-boot/target/classes started by al in /Users/al/IdeaProjects/job-spring-boot)
+2025-03-21 21:12:39 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - No active profile set, falling back to 1 default profile: "default"
+2025-03-21 21:12:39 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-21 21:12:39 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-21 21:12:40 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-03-21 21:12:40 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:12:40 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-21 21:12:40 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-03-21 21:12:40 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-21 21:12:40 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 461 ms
+2025-03-21 21:12:45 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-03-21 21:12:45 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-21 21:12:45 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-03-21 21:12:45 [restartedMain] INFO  c.mycompany.jobspringboot.JobSpringBootApplication - Started JobSpringBootApplication in 6.166 seconds (process running for 6.357)
+2025-03-21 21:12:52 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-21 21:12:52 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-21 21:12:52 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-03-21 21:12:53 [http-nio-8080-exec-4] INFO  org.springdoc.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 166 ms
+2025-03-21 21:14:07 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-21 21:14:07 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@197f71ee
+2025-03-21 21:14:07 [http-nio-8080-exec-9] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-21 21:15:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-21 21:15:19 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
